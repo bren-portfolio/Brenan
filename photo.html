@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Straw Hat Pirates Gallery</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg,#001f3f,#004d7a,#008793);
+            min-height:100vh;
+            padding:40px;
+        }
+
+	
+        h1{
+            text-align:center;
+            color:white;
+            font-size:50px;
+            margin-bottom:40px;
+            text-shadow:3px 3px 8px black;
+            letter-spacing:3px;
+        }
+
+        .gallery{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:30px;
+            max-width:1200px;
+            margin:auto;
+        }
+
+        .card{
+            background:rgba(255,255,255,0.12);
+            backdrop-filter:blur(10px);
+            border:1px solid rgba(255,255,255,0.3);
+            border-radius:20px;
+            padding:20px;
+            text-align:center;
+            transition:.4s;
+            box-shadow:0 10px 25px rgba(0,0,0,.4);
+        }
+
+        .card:hover{
+            transform:translateY(-12px);
+            background:rgba(255,255,255,.2);
+        }
+
+        .card img{
+            width:170px;
+            height:170px;
+            border-radius:50%;
+            object-fit:cover;
+            border:5px solid white;
+            transition:.4s;
+        }
+
+        .card:hover img{
+            transform:rotate(8deg) scale(1.08);
+        }
+
+        h2{
+            color:white;
+            margin-top:18px;
+            font-size:24px;
+        }
+
+        p{
+            color:#d8f3ff;
+            margin-top:8px;
+            font-size:15px;
+        }
+
+        footer{
+            text-align:center;
+            color:white;
+            margin-top:50px;
+            font-size:15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Straw Hat Pirates </h1>
+
+    <div class="gallery">
+
+        <div class="card">
+            <img src="Images/luffy.jpg" alt="Luffy">
+            <h2>Luffy</h2>
+            <p>Captain of the Straw Hat Pirates.</p>
+        </div>
+
+        <div class="card">
+            <img src="Images/zoro.webp" alt="Zoro">
+            <h2>Zoro</h2>
+            <p>The swordsman aiming to become the world's greatest.</p>
+        </div>
+
+        <div class="card">
+            <img src="Images/nami.jpg" alt="Nami">
+            <h2>Nami</h2>
+            <p>The brilliant navigator of the crew.</p>
+        </div>
+
+        <div class="card">
+            <img src="Images/usopp.png" alt="Usopp">
+            <h2>Usopp</h2>
+            <p>A brave sniper with big dreams.</p>
+        </div>
+
+        <div class="card">
+            <img src="Images/sanji.jpg" alt="Sanji">
+            <h2>Sanji</h2>
+            <p>The cook who fights with powerful kicks.</p>
+        </div>
+
+        <div class="card">
+            <img src="Images/chopper.jpg" alt="Chopper">
+            <h2>Chopper</h2>
+            <p>The adorable doctor of the crew.</p>
+        </div>
+
+        <div class="card">
+            <img src="Images/robin.jpg" alt="Robin">
+            <h2>Robin</h2>
+            <p>The archaeologist seeking the True History.</p>
+        </div>
+
+        <div class="card">
+            <img src="Images/franky.jpg" alt="Franky">
+            <h2>Franky</h2>
+            <p>The cyborg shipwright who built the Thousand Sunny.</p>
+        </div>
+
+        <div class="card">
+            <img src="Images/brook.png" alt="Brook">
+            <h2>Brook</h2>
+            <p>The skeleton musician with a cheerful soul.</p>
+        </div>
+
+        <div class="card">
+            <img src="Images/jinbei.jpg" alt="Jinbei">
+            <h2>Jinbei</h2>
+            <p>The Knight of the Sea.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        @ 2026 One Piece Fan Gallery
+    </footer>
+
+</body>
+</html>

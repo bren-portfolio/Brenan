@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80");
+            background-size: cover;
+        }
+
+	
+        
+        #menu {
+            width: 70%;
+            margin: 40px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px black;
+        }
+
+       
+        #restaurant-name {
+            text-align: center;
+            color: darkred;
+            font-size: 45px;
+            font-family: Georgia, serif;
+            margin-bottom: 20px;
+        }
+
+        
+        h2 {
+            text-align: center;
+            padding: 10px;
+            color: white;
+            border-radius: 8px;
+            font-size: 28px;
+        }
+
+        
+        .appetizers {
+            background-color: #ff9800;
+        }
+
+        .maincourse {
+            background-color: #4caf50;
+        }
+
+        .drinks {
+            background-color: #2196f3;
+        }
+
+        .desserts {
+            background-color: #e91e63;
+        }
+
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            font-size: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .price {
+            color: darkred;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-style: italic;
+            color: #444;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="menu">
+
+    <h1 id="restaurant-name">Bren's Restaurant</h1>
+
+    <h2 class="appetizers">Appetizers</h2>
+    <ul>
+        <li>Garlic Bread <span class="price">$20</span></li>
+        <li>Spring Rolls <span class="price">$50</span></li>
+        <li>Caesar Salad <span class="price">$80</span></li>
+    </ul>
+
+    <h2 class="maincourse">Main Course</h2>
+    <ul>
+        <li>Grilled Chicken <span class="price">$35</span></li>
+        <li>Beef Steak <span class="price">$50</span></li>
+        <li>Seafood Pasta <span class="price">$80</span></li>
+    </ul>
+
+    <h2 class="drinks">Drinks</h2>
+    <ul>
+        <li>Iced Tea <span class="price">$15</span></li>
+        <li>Fresh Lemon Juice <span class="price">$20</span></li>
+        <li>Soft Drinks <span class="price">$25</span></li>
+    </ul>
+
+    <h2 class="desserts">Desserts</h2>
+    <ul>
+        <li>Chocolate Cake <span class="price">$14</span></li>
+        <li>Ice Cream Sundae <span class="price">$12</span></li>
+        <li>Fruit Salad <span class="price">$11</span></li>
+    </ul>
+
+    <footer>
+        Thank you for dining with us!
+    </footer>
+
+</div>
+
+</body>
+</html>

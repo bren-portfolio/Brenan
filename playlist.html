@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bren's Playlist</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            background-color: rgb(173, 230, 213);
+            text-align: center;
+        }
+
+	
+        table{
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th{
+            background-color: rgb(0, 128, 53);
+            color: white;
+            padding: 10px;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        img{
+            width: 100px;
+        }
+    </style>
+
+    <script>
+        function stopOthers(currentAudio){
+            var audios = document.getElementsByTagName("audio");
+
+            for(var i = 0; i < audios.length; i++){
+                if(audios[i] != currentAudio){
+                    audios[i].pause();
+                    audios[i].currentTime = 0;
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+<h1>Bren's Playlist </h1>
+
+<table>
+    <tr>
+        <th>Song</th>
+        <th>Album Cover</th>
+        <th>Play Music</th>
+    </tr>
+
+    <tr>
+        <td>Panaginip</td>
+        <td><img src="Images/panaginip.jpg"></td>
+        <td>
+            <audio controls onplay="stopOthers(this)">
+                <source src="mp3/panaginip.mp3" type="audio/mpeg">
+            </audio>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Kabisado</td>
+        <td><img src="Images/kabisado.webp"></td>
+        <td>
+            <audio controls onplay="stopOthers(this)">
+                <source src="mp3/kabisado.mp3" type="audio/mpeg">
+            </audio>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Sulitin</td>
+        <td><img src="Images/sulitin.jpg"></td>
+        <td>
+            <audio controls onplay="stopOthers(this)">
+                <source src="mp3/sulitin.mp3" type="audio/mpeg">
+            </audio>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Eroplanong Papel</td>
+        <td><img src="Images/eroplano.jpg"></td>
+        <td>
+            <audio controls onplay="stopOthers(this)">
+                <source src="mp3/eroplano.mp3" type="audio/mpeg">
+            </audio>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Paninindigan Kita</td>
+        <td><img src="Images/panin.webp"></td>
+        <td>
+            <audio controls onplay="stopOthers(this)">
+                <source src="mp3/panin.mp3" type="audio/mpeg">
+            </audio>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Lifetime</td>
+        <td><img src="Images/lifetime.webp"></td>
+        <td>
+            <audio controls onplay="stopOthers(this)">
+                <source src="mp3/lifetime.mp3" type="audio/mpeg">
+            </audio>
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>
