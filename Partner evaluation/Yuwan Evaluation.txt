@@ -1,0 +1,13 @@
+Partner Evaluation
+1. The navigation is easy to use, it displays all the things I need to see and what they do
+2. The content also seems organized, there are different tabs with different purposes
+3. The text is readable and shows consistency and professionalism in terms of choice of colors
+4. The design is consistent which shows blue themed colors and texts
+5. The website is accessible in terms of design and responsiveness which makes it great for users who use mobile devices or tablets, but some links don’t work.
+6. Not all links work, when opening the tab “About Me” from the “Skills” tab it displays an error message but other than that all links were working.
+7. In my opinion the website looks professional and its design can be used for future projects for companies
+
+Suggestions:
+1. I would suggest changing the header and title of the website “My Portfolio” and “My Portfolio | Home” to his name or logo
+2. Some links seemed to not work and can not be opened. Fixing these issues would make the website better and accessible
+3. In the “Contact” tab the left div where it shows the “Let’s Connect”, there are a lot of spaces left that can still be used. I would suggest adding more contact information like his facebook profile or his contact number.
